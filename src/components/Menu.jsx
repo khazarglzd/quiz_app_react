@@ -1,9 +1,29 @@
-import React from 'react'
+import "../App.css";
+import { useContext } from "react";
+import { GameStateContext } from "../helpers/Context";
 
-const Menu = () => {
+function Menu() {
+    const { gameState, setGameState } = useContext(
+        GameStateContext
+    );
     return (
-        <div>Menu</div>
-    )
+        <div className="Menu">
+            <label>Enter Your Name:</label>
+            <input
+                type="text"
+                onChange={(event) => {
+                    setUserName(event.target.value);
+                }}
+            />
+            <button
+                onClick={() => {
+                    setGameState("playing");
+                }}
+            >
+                Start Quiz
+            </button>
+        </div>
+    );
 }
 
-export default Menu
+export default Menu;
