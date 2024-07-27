@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { GameStateContext } from "../helpers/Context";
 
 function Menu() {
-    const { gameState, setGameState } = useContext(
+    const { gameState, setGameState, userName, setUserName } = useContext(
         GameStateContext
     );
     return (
@@ -15,7 +15,7 @@ function Menu() {
                     setUserName(event.target.value);
                 }}
             />
-            <button
+            <button id="startQuiz"
                 onClick={() => {
                     setGameState("playing");
                 }}
