@@ -5,7 +5,7 @@ export const Questions = [
         optionB: "Vue",
         optionC: "Angular",
         optionD: "Java",
-        asnwer: "optionD",
+        answer: "optionD",
     },
     {
         prompt: "React is a JavaScript library for building ___.",
@@ -13,7 +13,7 @@ export const Questions = [
         optionB: "Connectivity",
         optionC: "User Interface",
         optionD: "Design Platform",
-        asnwer: "optionC",
+        answer: "optionC",
     },
     {
         prompt: "User interface developed with React is made of small and isolated pieces of code called ___.",
@@ -21,7 +21,7 @@ export const Questions = [
         optionB: "Component",
         optionC: "Function",
         optionD: "Snippet",
-        asnwer: "optionB",
+        answer: "optionB",
     },
     {
         prompt: "What are the two main types of components in React.js?",
@@ -29,7 +29,7 @@ export const Questions = [
         optionB: "Functional and stateful",
         optionC: "UI and container",
         optionD: "Presentational and container",
-        asnwer: "optionA",
+        answer: "optionA",
     },
     {
         prompt: "User interface developed with React is made of small and isolated pieces of code called ___.",
@@ -37,7 +37,7 @@ export const Questions = [
         optionB: "Component",
         optionC: "Function",
         optionD: "Snippet",
-        asnwer: "optionB",
+        answer: "optionB",
     },
     {
         prompt: "A React component takes in parameters called ___?",
@@ -45,7 +45,7 @@ export const Questions = [
         optionB: "Events",
         optionC: "Props",
         optionD: "Children",
-        asnwer: "optionC",
+        answer: "optionC",
     },
     {
         prompt: "User interface developed with React is made of small and isolated pieces of code called ___.",
@@ -53,7 +53,7 @@ export const Questions = [
         optionB: "Component",
         optionC: "Function",
         optionD: "Snippet",
-        asnwer: "optionB",
+        answer: "optionB",
     },
     {
         prompt: "To write HTML in react we make use of ___?",
@@ -61,7 +61,7 @@ export const Questions = [
         optionB: "HTTP",
         optionC: "XML",
         optionD: "JSX",
-        asnwer: "optionD",
+        answer: "optionD",
     },
     {
         prompt: "JSX Stands for ___?",
@@ -69,7 +69,7 @@ export const Questions = [
         optionB: "JavaScript Extreme",
         optionC: "JavaScript XML",
         optionD: "JavaScript XScript",
-        asnwer: "optionC",
+        answer: "optionC",
     },
     {
         prompt: "React DOM uses ___ case property naming convention?",
@@ -77,7 +77,7 @@ export const Questions = [
         optionB: "Pascal",
         optionC: "Snake",
         optionD: "Kebab",
-        asnwer: "optionA",
+        answer: "optionA",
     },
     {
         prompt: "___ are the smallest building blocks of React apps.",
@@ -85,7 +85,7 @@ export const Questions = [
         optionB: "Component",
         optionC: "Elements",
         optionD: "JSX",
-        asnwer: "optionC",
+        answer: "optionC",
     },
     {
         prompt: "One of these hooks is used to imitate lifecycles",
@@ -93,6 +93,6 @@ export const Questions = [
         optionB: "useEffect",
         optionC: "useReducer",
         optionD: "useCycles",
-        asnwer: "optionB",
+        answer: "optionB",
     },
 ];

@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .Menu {
@@ -33,7 +34,16 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: rgb(16, 82, 78);
+  color: #ffffff;
 }
+
+/* .clicked {
+  background-color: green;
+}
+.unclicked {
+  background-color: red;
+} */
 
 .Quiz {
   width: 500px;
@@ -41,9 +51,11 @@ button:hover {
   border-radius: 10px;
   background-color: lightseagreen;
   display: flex;
+  font-size: 12px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .Menu,
@@ -64,7 +76,7 @@ button:hover {
 }
 
 #nextQuestion {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(92, 91, 91);
   color: #ffffff;
   width: 300px;
   height: 50px;
@@ -75,10 +87,23 @@ button:hover {
 }
 #startQuiz {
   width: 300px;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(92, 91, 91);
   color: #ffffff;
 }
 
 h3 {
   color: #ffffff;
+}
+
+.questionText {
+  margin-bottom: 20px;
+}
+
+.appName {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+label {
+  font-size: 20px;
 }

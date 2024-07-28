@@ -8,6 +8,12 @@ function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen, setOptionChosen] = useState("");
 
+    const [isActive, setActive] = useState("false");
+
+    const ToggleClass = () => {
+        setActive(!isActive);
+    };
+
     const { score, setScore, gameState, setGameState } = useContext(
         GameStateContext
     );
@@ -17,14 +23,14 @@ function Quiz() {
     };
 
     const nextQuestion = () => {
-        if (Questions[currentQuestion].asnwer == optionChosen) {
+        if (Questions[currentQuestion].answer == optionChosen) {
             setScore(score + 1);
         }
         setCurrentQuestion(currentQuestion + 1);
     };
 
     const finishQuiz = () => {
-        if (Questions[currentQuestion].asnwer == optionChosen) {
+        if (Questions[currentQuestion].answer == optionChosen) {
             setScore(score + 1);
         }
         setGameState("finished");
@@ -32,32 +38,37 @@ function Quiz() {
 
     return (
         <div className="Quiz">
-            <h1>{Questions[currentQuestion].prompt}</h1>
+            <h1 className="questionText">{Questions[currentQuestion].prompt}</h1>
             <div className="questions">
                 <button
                     onClick={() => {
-                        chooseOption("optionA");
+                        chooseOption("optionA"), { nextQuestion }
+
                     }}
                 >
                     {Questions[currentQuestion].optionA}
                 </button>
+
                 <button
                     onClick={() => {
-                        chooseOption("optionB");
+                        chooseOption("optionB")
+
                     }}
                 >
                     {Questions[currentQuestion].optionB}
                 </button>
                 <button
                     onClick={() => {
-                        chooseOption("optionC");
+                        chooseOption("optionC")
+
                     }}
                 >
                     {Questions[currentQuestion].optionC}
                 </button>
                 <button
                     onClick={() => {
-                        chooseOption("optionD");
+                        chooseOption("optionD")
+
                     }}
                 >
                     {Questions[currentQuestion].optionD}
