@@ -8,12 +8,6 @@ function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen, setOptionChosen] = useState("");
 
-    const [isActive, setActive] = useState("false");
-
-    const ToggleClass = () => {
-        setActive(!isActive);
-    };
-
     const { score, setScore, gameState, setGameState } = useContext(
         GameStateContext
     );

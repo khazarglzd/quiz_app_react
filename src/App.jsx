@@ -23,9 +23,11 @@ function App() {
           setScore,
         }}
       >
+
         {gameState === "menu" && <Menu />}
         {gameState === "playing" && <Quiz />}
         {gameState === "finished" && <EndScreen />}
+
       </GameStateContext.Provider>
     </div>
   );

@@ -71,7 +71,7 @@ button:hover {
   background-color: lightseagreen;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -85,9 +85,20 @@ button:hover {
   border-radius: 5px;
   font-size: 20px;
 }
+#nextQuestion:hover {
+  cursor: pointer;
+  background-color: rgb(13, 13, 13);
+  color: #ffffff;
+}
+
 #startQuiz {
   width: 300px;
   background-color: rgb(92, 91, 91);
+  color: #ffffff;
+}
+#startQuiz:hover {
+  cursor: pointer;
+  background-color: rgb(13, 13, 13);
   color: #ffffff;
 }
 

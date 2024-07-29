@@ -15,13 +15,14 @@ function Menu() {
                     setUserName(event.target.value);
                 }}
             />
-            <button id="startQuiz"
+            {userName.length > 0 ? <button id="startQuiz"
                 onClick={() => {
                     setGameState("playing");
                 }}
             >
                 Start Quiz
-            </button>
+            </button> : null}
+
         </div>
     );
 }
